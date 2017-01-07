@@ -1,0 +1,8 @@
+<h3>
+  Property Binding
+</h3>
+<div>
+  <input type="text" [value]="propertyToBind">
+</div>
+<p [ngClass]="{redBorder: isStyled()}">Directive property binding activating or not the style CSS redBorder.</p>
+<p [ngStyle]="{color: getOneColor()}">Directive property binding changing the font color.</p>
