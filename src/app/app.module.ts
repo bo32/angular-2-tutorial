@@ -11,6 +11,8 @@ import { CustompropertybindingComponent } from './databinding/custompropertybind
 import { EventbindingComponent } from './databinding/eventbinding.component';
 import { LifecycleComponent } from './lifecycle.component';
 import { HttpComponent } from './http/http.component';
+import { SimpleComponentComponent } from './simple-component.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpComponent } from './http/http.component';
     CustompropertybindingComponent,
     EventbindingComponent,
     LifecycleComponent,
-    HttpComponent
+    HttpComponent,
+    SimpleComponentComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
