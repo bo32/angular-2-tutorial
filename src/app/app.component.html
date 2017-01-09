@@ -3,6 +3,13 @@
 </h1>
 <!--<app-databinding></app-databinding>
 <app-lifecycle></app-lifecycle>-->
-<app-http></app-http>
-<app-simple-component></app-simple-component>
-<app-template-driven></app-template-driven>
+<!--<app-http></app-http>-->
+<!--<app-simple-component></app-simple-component>-->
+<!--<app-template-driven></app-template-driven>-->
+
+<a [routerLink]="['']">Home</a>
+<a [routerLink]="['/template_driven-example']">Template Driven example</a>
+<a [routerLink]="['/http-example']">HTTP consumer example</a>
+<div>
+  <router-outlet></router-outlet>
+</div>

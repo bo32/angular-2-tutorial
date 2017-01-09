@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -13,6 +14,7 @@ import { LifecycleComponent } from './lifecycle.component';
 import { HttpComponent } from './http/http.component';
 import { SimpleComponentComponent } from './simple-component.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
     LifecycleComponent,
     HttpComponent,
     SimpleComponentComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
